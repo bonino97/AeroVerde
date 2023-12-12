@@ -147,3 +147,11 @@ $(document).ready(function() {
 
   });
 
+// Function para mensaje por wpp 
+
+  function enviarWhatsApp() {
+    var userMessage = document.getElementById('userMessage').value;
+    const phoneNumber = '5493468607247';
+    var whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(userMessage)}`
+    window.open(whatsappLink, '_blank');
+}

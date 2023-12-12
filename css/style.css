@@ -47,6 +47,11 @@ h1,h2,h3, .btn {
   letter-spacing: 1px;
 }
 
+.logo img{
+  width: px;
+  height: 1px;
+}
+
 h1 {
   font-weight: bold;
   font-size: 100px;
@@ -312,7 +317,7 @@ a:focus {
   position: relative;
   padding: 40px;
   margin-top: 32px;
-  height: 500px;
+  height: 300px;
 }
 #feature .feature-icon {
   background-color: #222;
@@ -509,13 +514,13 @@ a:focus {
 }
 
 
-/* 
-servicios section
-#servicios .gallery-thumb {
+
+
+#servicios .iso-box {
   position: relative;
   overflow: hidden;
   margin: 0;
-}  */
+}  
 
 
 /* Beneficios section */
