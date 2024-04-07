@@ -18,6 +18,29 @@ $(document).ready(function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.contenedor_tarjeta');
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1 // Detectar cuando la mitad de la tarjeta está visible
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelector('figure').classList.add('show-back');
+      } else {
+        entry.target.querySelector('figure').classList.remove('show-back');
+      }
+    });
+  }, options);
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+});
 
 /* Istope Portfolio
 -----------------------------------------------*/
@@ -101,9 +124,9 @@ $(document).ready(function() {
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
-       "images/soja.jpg", 
+      "images/avan3.jpg",
+      "images/soja.jpg", 
        "images/avan2.jpg",
-       "images/avan3.jpg",
        "images/avan4.jpg",
         ],  {duration: 2000, fade: 750});
     });
