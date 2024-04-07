@@ -5,8 +5,12 @@ Template 2083 Steak House
 http://www.tooplate.com/view/2083-steak-house
 
 */
+#avansysLogoInicio{
+  height: 90px;
+  width: 90px;
+}
+
 #avansysLogo{
-  margin-top: 0;
   height: 60px;
   width: 190px;
 }
